@@ -1,0 +1,73 @@
+# Sample Calculator
+
+
+def add(a,b):
+     return a+b
+def sub(a,b):
+     return a-b
+def mul(a,b):
+     return a*b
+def div(a,b):
+     if(a==0 or b==0):
+         return "Error! Division by zero."
+     else:
+         return a/b
+while True:
+    cal="1. ADD\n2. SUB\n3. MUL\n4. DIV\n5. EXIT"
+    print("______________________________\n")
+    print("Select Your Choice : \n")
+    print(cal)
+    print("______________________________")
+
+    ch=int(input("Enter Your Choice : "))
+    if(ch==1):
+        print("You Have Choice Addition")
+        a=int(input("Enter A : "))
+        b=int(input("Enter B : "))
+        addition=add(a,b)
+        print("Your Answer is : ",addition)
+        user=input("\n Again Continue : Y/N : ")
+        if user.upper()=="Y":
+            continue
+        else:
+            break
+    elif(ch==2):
+        print("You Have Choice Substraction")
+        a=int(input("Enter A : "))
+        b=int(input("Enter B : "))
+        substraction=sub(a,b)
+        print("Your Answer is : ",substraction)
+        user=input("\n Again Continue : Y/N : ")
+        if user.upper()=="Y":
+            continue
+        else:
+            break
+    elif(ch==3):
+        print("You Have Choice Multiplication")
+        a=int(input("Enter A : "))
+        b=int(input("Enter B : "))
+        multiplication=mul(a,b)
+        print("Your Answer is : ",multiplication)
+        user=input("\n Again Continue : Y/N : ")
+        if user.upper()=="Y":
+            continue
+        else:
+            break
+    elif(ch==4):
+        print("You Have Choice Division")
+        a=int(input("Enter A : "))
+        b=int(input("Enter B : "))
+        division=div(a,b)
+        print("Your Answer is : ",division)
+        user=input("\n Again Continue : Y/N : ")
+        if user.upper()=="Y":
+            continue
+        else:
+            break
+    
+    elif(ch==5):
+        print("You Have Exit")
+        break
+
+    else:
+        print("Enter Correct Choice")   
